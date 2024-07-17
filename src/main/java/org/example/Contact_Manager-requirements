@@ -1,0 +1,26 @@
+***** ContactManager Project *****
+
+Foydalanuvchilarning kontaktlarini boshqaradigan dastur tuzing.
+Bu dasturda foydalanuvchi kontakt kiritish, kontaktlarni ko'rish (kontaklar ro'yxati),
+ularni o'chirish va ular orasidan kontaktlarni qidirish imkoni bo'lsin.
+Bu dastur consol yordamida ishlaydigan bo'lsin.
+
+Muhim!!!
+Bir xil kontaktlar kiritish mumkin emas(phone unique).
+Har bir kontaktni ismi, familyasi, telefon nomeri bo'ladi.
+
+*** Menu ***
+1. Add Contact
+   Enter name:
+   Enter surname:
+   Enter phone:
+
+2. Contact List
+   1.Name, surname, phone
+
+3. Searching Contacts(name, surname, phone)
+
+4. Delete Contact(by phone number)
+   Enter phone:
+
+0. Exit
