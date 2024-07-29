@@ -2,11 +2,11 @@ package org.example.service;
 
 import org.example.Contact;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ContactService {
-
-    Contact contact = new Contact();
 
     public static void menu(){
         System.out.println("*** Menu ***\n" + "1.Contact add\n" + "2.Contact List\n" + "3.Searching Contacts\n"
@@ -19,7 +19,8 @@ public class ContactService {
         return scanner.nextInt();
     }
 
-    public void addContact(){
+
+    public Contact createContact(){
         Contact contact = new Contact();
         Scanner scanner = new Scanner(System.in);
 
@@ -30,6 +31,7 @@ public class ContactService {
         while(!isValidName){
             System.out.print("Enter contact name: ");
             String nameStr = scanner.nextLine();
+
 
             if(nameStr == null || nameStr.trim().length() < 3 || nameStr.trim().equals("")){
                 System.out.println("Please enter a valid name.");
@@ -75,6 +77,13 @@ public class ContactService {
         }
         System.out.println("Successfully entered contact");
 
+        return contact;
+
     }
 
+    public void printContacts(List<Contact> contactList) {
+        for (Contact contact : contactList) {
+            System.out.println(contact);
+        }
+    }
 }
